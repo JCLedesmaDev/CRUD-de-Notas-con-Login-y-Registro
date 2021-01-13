@@ -4,7 +4,8 @@
   <div class="col-md-3">
     <div class="card">
       <div class="card-body">
-        {{!-- No hace falta especificar que estamos dentro de "notes" debido a que estamos edntro del "each", por lo que entiende que estamos recorriendo a "notes"--}}
+        {{!-- No hace falta especificar que estamos dentro de "notes" debido a que estamos edntro del "each", por lo que
+        entiende que estamos recorriendo a "notes"--}}
 
         <h4 class="card-title d-flex justify-content-between align-items-center">
           {{title}}
@@ -20,7 +21,9 @@
           {{description}}
         </p>
 
-        {{!-- Aqui hay un problema: Los formularios solamente pueden enviar peticiones "post y get"  pero para ello, utilizaremos un modulo llamado "method-override" que nos permitira tambien enviar peticiones DELETE en el formulario. Por lo que lo requeriremos en el archivo "server.js" y luego lo ejecutaremos--}}
+        {{!-- Aqui hay un problema: Los formularios solamente pueden enviar peticiones "post y get" pero para ello,
+        utilizaremos un modulo llamado "method-override" que nos permitira tambien enviar peticiones DELETE en el
+        formulario. Por lo que lo requeriremos en el archivo "server.js" y luego lo ejecutaremos--}}
         <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
           <button type="submit" class="btn btn-danger btn-block btn-sm">Eliminar</button>
         </form>

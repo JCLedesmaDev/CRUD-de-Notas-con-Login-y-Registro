@@ -1,7 +1,7 @@
-usersCtrl = {}
-
 const User = require("../models/User")
 const passport = require("passport")
+
+const usersCtrl = {}
 
 usersCtrl.renderSignUpForm = (req, res) =>{
 
@@ -14,7 +14,6 @@ usersCtrl.renderSignUpForm = (req, res) =>{
 }
 
 //Aca guardaremos toda la logica de registrar un Usuario
-
 usersCtrl.signup = async (req, res) =>{
 
   //Extraemos todos los valores que tiene el formulario

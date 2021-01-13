@@ -1,0 +1,11 @@
+1) Cambiar posicion de Login y Registrer a principio de pantalla (poco visible e intuitivo a primera vista)
+
+2) Cambiar de lugar la opcion de agregar nota y ponerla en la misma pantalla (forma de icono grande) de donde aparece las notas. ACTUALMENTE SE ENCUENTRA EN MENU.
+
+3) Cambiar de lugar la opcion de CERRA SESION (Fuera de MENU/Notas) 
+
+4) Al ingresar el mail en registro, pasar todo MAIL a toLower() para que independientemente de como lo escribas, la bd lo tome como minusculas
+
+5) Utilizar JWT para que se mantenga la sesion abierta en el lapso del tiempo (Al cerrar la app, te cierra la sesion)
+
+6) Agregar todas las validaciones al formulario

@@ -4,7 +4,6 @@ const exphbs = require("express-handlebars")
 const path = require("path")
 const morgan = require("morgan")
 const cors = require("cors");
-const { extname } = require("path");
 const methodOverride = require("method-override")
 const flash = require("connect-flash")
 const session = require("express-session")
@@ -101,7 +100,7 @@ app.use((req,res, next) => {
 /*                Routes                */
 
 //Importamos el archivo principal con todas las rutas del servidor
-app.use(require("./routes/index.routes"))
+app.use(require("./routes/index.routes")) 
 app.use(require("./routes/notes.routes"))
 app.use(require("./routes/user.routes"))
 
